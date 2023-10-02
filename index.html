@@ -8,7 +8,11 @@
   </head>
   <body>
     <h1><a href="#iframe">Anchor link to iframe</a></h1>
-    <h1><a href="#anchor">Anchor link into iframe (doesn't work)</a></h1>
+    <h1>
+      <a href="./iframe.html#anchor" target="myframe"
+        >Anchor link into iframe (doesn't work in Firefox and Safari)</a
+      >
+    </h1>
     <div class="buttons-wrapper">
       <button>Random other focusable element</button>
       <button>Random other focusable element</button>
@@ -262,7 +266,12 @@
         repudiandae omnis sunt eum deserunt quia sit neque nam fuga obcaecati.
         Debitis aliquid iure eos?
       </p>
-      <iframe id="iframe" src="./iframe.html" frameborder="0"></iframe>
+      <iframe
+        id="iframe"
+        name="myframe"
+        src="./iframe.html"
+        frameborder="0"
+      ></iframe>
     </main>
   </body>
 </html>
